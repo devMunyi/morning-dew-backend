@@ -2,7 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const port = process.env.PORT || 5000;
 const app = express();
-const path = require('path');
+// const path = require('path');
+const cors = require("cors")
 
 app.use(express.json());
 
@@ -12,6 +13,7 @@ const usersRoute = require("./api/routes/userRoute");
 const bookingsRoute = require("./api/routes/bookingsRoute");
 
 
+app.use(cors());
 app.use("/rooms", roomsRoute);
 app.use("/users", usersRoute);
 app.use("/bookings", bookingsRoute);
