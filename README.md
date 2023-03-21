@@ -56,7 +56,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://morning-dew-backend-production.up.railway.app/)
+- [Live Demo Link](https://morning-dew-backend-production.up.railway.app/rooms/getallrooms)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
