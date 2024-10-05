@@ -4,8 +4,10 @@ const port = process.env.PORT || 5000;
 const app = express();
 // const path = require('path');
 const cors = require("cors")
+const morgan = require("morgan");
 
 app.use(express.json());
+app.use(morgan("dev"));
 
 const dbConfig = require("./db");
 const roomsRoute = require("./api/routes/roomsRoute");
